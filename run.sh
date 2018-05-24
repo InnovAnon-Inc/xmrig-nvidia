@@ -1,7 +1,7 @@
 #! /bin/bash
 set -exo nounset
 
-[ -x build/xmrig ] || ./build.sh
+[ -x build/xmrig-nvidia ] || ./build.sh
 
 sudo nice -n -20 \
 	build/xmrig-nvidia --donate-level=0 \
