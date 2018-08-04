@@ -6,6 +6,7 @@ set -exo nounset
 [ -x build/xmrig-nvidia ] || ./build.sh
 
 sudo nice -n -20 \
+	sudo -u seanrdev \
 	build/xmrig-nvidia --donate-level=0 \
 	--config=./workstation.json
 #	--config=$1
